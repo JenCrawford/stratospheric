@@ -14,7 +14,12 @@
     "eu-central-1b",
     "eu-central-1c"
   ],
-  "vpc-provider:account=221875718260:filter.tag:Name=NetworkStack/Network/vpc:region=eu-central-1:returnAsymmetricSubnets=true": {
+  "availability-zones:account=155774894054:region=eu-west-2": [
+    "eu-west-2a",
+    "eu-west-2b",
+    "eu-west-2c"
+  ],
+  "vpc-provider:account=155774894054:filter.tag:Name=NetworkStack/Network/vpc:region=eu-central-1:returnAsymmetricSubnets=true": {
     "vpcId": "vpc-00b6306a30ff53219",
     "vpcCidrBlock": "10.0.0.0/16",
     "availabilityZones": [],
@@ -26,13 +31,13 @@
           {
             "subnetId": "subnet-017348aebae0bef23",
             "cidr": "10.0.0.0/18",
-            "availabilityZone": "eu-central-1a",
+            "availabilityZone": "eu-west-2a",
             "routeTableId": "rtb-0a271c9fac83102aa"
           },
           {
             "subnetId": "subnet-0affbe510b0487773",
             "cidr": "10.0.64.0/18",
-            "availabilityZone": "eu-central-1b",
+            "availabilityZone": "eu-west-2b",
             "routeTableId": "rtb-0ab4721842465719a"
           }
         ]
@@ -44,20 +49,20 @@
           {
             "subnetId": "subnet-06228e6bc8de2e79e",
             "cidr": "10.0.128.0/18",
-            "availabilityZone": "eu-central-1a",
+            "availabilityZone": "eu-west-2a",
             "routeTableId": "rtb-0555d374cd56eef9b"
           },
           {
             "subnetId": "subnet-0f84fba03f14662c6",
             "cidr": "10.0.192.0/18",
-            "availabilityZone": "eu-central-1b",
+            "availabilityZone": "eu-west-2b",
             "routeTableId": "rtb-0315919712547eb43"
           }
         ]
       }
     ]
   },
-  "hosted-zone:account=221875718260:domainName=stratospheric.dev:region=eu-central-1": {
+  "hosted-zone:account=155774894054:domainName=stratospheric.dev:region=eu-eu-west-2": {
     "Id": "/hostedzone/Z081807328Y7TTKJ4NKFU",
     "Name": "stratospheric.dev."
   }
