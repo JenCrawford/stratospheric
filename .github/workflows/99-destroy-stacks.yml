@@ -33,7 +33,7 @@ jobs:
 
       - name: Destroy Service
         working-directory: cdk
-        run: npm run service:deploy
+        run: npm run service:destroy
 
       - name: Destroy Dynamo
         working-directory: cdk
@@ -41,44 +41,44 @@ jobs:
 
       - name: Destroy Canary
         working-directory: cdk
-        run: npm run canary:deploy
+        run: npm run canary:destroy
 
       - name: Destroy Monitoring
         working-directory: cdk
-        run: npm run monitoring:deploy
+        run: npm run monitoring:destroy
 
       - name: Destroy Deployment Sequencer
         working-directory: cdk
-        run: npm run deployment-sequencer:deploy
+        run: npm run deployment-sequencer:destroy
 
       - name: Destroy Domain
         working-directory: cdk
-        run: npm run domain:deploy
+        run: npm run domain:destroy
 
       - name: Destroy ActiveMQ
         working-directory: cdk
-        run: npm run activeMq:deploy
+        run: npm run activeMq:destroy
 
       - name: Destroy messaging
         working-directory: cdk
-        run: npm run messaging:deploy
+        run: npm run messaging:destroy
 
       - name: Destroy Database
         working-directory: cdk
-        run: npm run database:deploy
+        run: npm run database:destroy
 
       - name: Destroy Cognito
         working-directory: cdk
-        run: npm run cognito:deploy
+        run: npm run cognito:destroy
 
       - name: Destroy Certificate
         working-directory: cdk
-        run: npm run certificate:deploy
+        run: npm run certificate:destroy
 
       - name: Destroy Network
         working-directory: cdk
-        run: npm run network:deploy
+        run: npm run network:destroy
 
       - name: Destroy repository
         working-directory: cdk
-        run: npm run repository:deploy
+        run: npm run repository:destroy
