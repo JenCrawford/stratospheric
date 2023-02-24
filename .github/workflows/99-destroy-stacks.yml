@@ -13,7 +13,7 @@ env:
 jobs:
   deploy:
     runs-on: ubuntu-20.04
-    name: Bootstrap CDK
+    name: Destroy Stacks
     if: github.ref == 'refs/heads/main'
     steps:
 
@@ -43,9 +43,9 @@ jobs:
         working-directory: cdk
         run: npm run canary:destroy
 
-      - name: Destroy Monitoring
-        working-directory: cdk
-        run: npm run monitoring:destroy
+#      - name: Destroy Monitoring
+#        working-directory: cdk
+#        run: npm run monitoring:destroy
 
       - name: Destroy Deployment Sequencer
         working-directory: cdk
